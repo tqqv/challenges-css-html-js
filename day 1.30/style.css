@@ -1,0 +1,232 @@
+
+ html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+} 
+
+body {
+    
+    background-image:  linear-gradient(to right, #4daf54, #3d8880 );
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.product-card {
+    border-radius: 15px;
+    height: 400px;
+    width: 320px;
+    background-color: #272d40;
+    margin: auto;
+    position: absolute;
+    /* overflow: hidden; */
+    top: 124px;
+}
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    height: 50px
+}
+
+.card-actions-icon {
+    margin: 20px;
+    top: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer; 
+    z-index: 1;
+}
+
+.card-item-img {
+    background-size: contain;
+    width: 80%;
+    margin-left: 13px;
+    position: relative; 
+    transform: rotate(0deg);
+    transition: 0.6s;
+    top: 0px
+}
+
+.item-info {
+    color: #4daf54;
+    font-weight: bold;
+    font-size: 25px;
+    /* transition: 10s; */
+} 
+
+.item-info-name {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: 0.6s;
+}
+
+.item-info-price {
+    color: white;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: 0.6s
+}
+
+.hidden__info {
+    position: relative;
+    left: 20px;
+    display: block;
+    top: 13px;
+    opacity: 0;
+    transition:0.7s;
+}
+
+.hidden__info-size {
+    color: #fff;
+    display: inline-flex;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 48px 0 16px 0;
+}
+
+.hidden__info--size-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #dadada;
+    margin: 0 10px;
+    border-radius: 3px;
+    text-align: center;
+    justify-items: center;
+    color: #404555;
+    cursor: pointer; 
+}
+
+.hidden__info-color {
+    color: #fff;
+    display: flex;
+    line-height: 30px;
+    font-size: 20px;
+
+}
+
+.color1-selection {
+    background-color: green;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.color2-selection {
+    background-color: red;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    margin-top: 3px;
+    cursor: pointer;
+
+}
+
+.color3-selection {
+    background-color: black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    margin-top: 3px;
+    cursor: pointer;
+
+}
+
+
+.hidden__info-contact {
+    display: flex;
+    margin: 20px 0;
+    height: 36px;
+}
+
+.btn-buy {
+    margin: 0 12px 0 0;
+}
+
+
+.btn {
+    background-color: #4daf54; 
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    width: 96px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform:scale(0.9,0.9);
+    transition-duration: 0.3s;
+    
+}
+
+
+/*  animation */
+
+
+ /*    transform: rotate(-20deg);
+ 
+    top: -80px; 
+    animation-name: shoes;
+     transition-duration: 0.5s;
+} */
+
+
+
+
+.product-card:hover .card-item-img {
+    animation:  shoes ease-in 0.4s ;
+    top: -94px;
+    transform: rotate(-20deg);
+} 
+
+.product-card:hover .hidden__info{
+    display: block;   
+    top: -90px;
+    opacity: 1;
+}
+
+.product-card:hover .item-info-name {
+    left: -42px;
+    top: -76px;
+}
+
+.product-card:hover .item-info-price {
+    left: -118px;
+    top: -76px;
+}
+
+
+/* tesst */
+.block {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    transition: .4s;
+    transform:rotate(0deg)
+}
+
+.block:hover {
+    width: 100px; 
+    height: 100px;
+    transform:rotate(45deg)
+}
+
